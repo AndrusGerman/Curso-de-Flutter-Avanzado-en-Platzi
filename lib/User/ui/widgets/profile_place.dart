@@ -11,13 +11,13 @@ class ProfilePlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final photoCard = Container(
-      margin: EdgeInsets.only(top: 10.0, bottom: 70.0),
+      margin: const EdgeInsets.only(top: 10.0, bottom: 70.0),
       height: 220.0,
       decoration: BoxDecoration(
           image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
           borderRadius: BorderRadius.all(Radius.circular(20.0)),
           color: Colors.red,
-          boxShadow: <BoxShadow>[
+          boxShadow: const [
             BoxShadow(
                 color: Colors.black38,
                 blurRadius: 10.0,
@@ -26,8 +26,8 @@ class ProfilePlace extends StatelessWidget {
     );
 
     return Stack(
-      alignment: Alignment(0.0, 0.8),
-      children: <Widget>[photoCard, ProfilePlaceInfo(place)],
+      alignment: const Alignment(0.0, 0.8),
+      children: <Widget>[photoCard, ProfilePlaceInfo(place: place)],
     );
   }
 }
