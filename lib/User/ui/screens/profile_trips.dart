@@ -10,7 +10,7 @@ class ProfileTrips extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        ProfileBackground(),
+        const ProfileBackground(),
         ListView(
           children: <Widget>[const ProfileHeader(), ProfilePlacesList()],
         ),
