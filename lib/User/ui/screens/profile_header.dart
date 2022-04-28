@@ -24,7 +24,7 @@ class ProfileHeader extends StatelessWidget {
             children: const [title],
           ),
           UserInfo('assets/img/ann.jpg', 'Anahí Salgado', 'anahi@platzi.com'),
-          ButtonsBar()
+          const ButtonsBar()
         ],
       ),
     );
