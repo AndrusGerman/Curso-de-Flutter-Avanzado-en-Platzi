@@ -18,8 +18,9 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # Create Key Store
-keytool -genkey -v -keystore ~/.android/platzi_trips.keystore -storepass myPasswordKey -alias platzi_trips -keypass myPasswordKey -keyalg RSA -keysize 2048 -validity 10000
+`keytool -genkey -v -keystore ~/.android/platzi_trips.keystore -storepass myPasswordKey -alias platzi_trips -keypass myPasswordKey -keyalg RSA -keysize 2048 -validity 10000`
 
 # Create Key For App
-keytool -list -v \
--alias platzi_trips -keystore ~/.android/platzi_trips.keystore
+`keytool -list -v -alias platzi_trips -keystore ~/.android/platzi_trips.keystore`
+
+set SHA1: in firebase
