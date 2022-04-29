@@ -14,3 +14,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+
+# Create Key Store
+keytool -genkey -v -keystore ~/.android/platzi_trips.keystore -storepass myPasswordKey -alias platzi_trips -keypass myPasswordKey -keyalg RSA -keysize 2048 -validity 10000
+
+# Create Key For App
+keytool -list -v \
+-alias platzi_trips -keystore ~/.android/platzi_trips.keystore
