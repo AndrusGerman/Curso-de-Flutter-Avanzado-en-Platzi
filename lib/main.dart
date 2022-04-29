@@ -9,10 +9,14 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    // Screen Widget
+    final screen = MaterialApp(
+        title: 'Flutter Demo', theme: ThemeData(), home: const PlatziTrips());
+
+    // Return Data
     return BlocProvider(
       bloc: UserBloc(),
-      child: MaterialApp(
-          title: 'Flutter Demo', theme: ThemeData(), home: const PlatziTrips()),
+      child: screen,
     );
   }
 }
