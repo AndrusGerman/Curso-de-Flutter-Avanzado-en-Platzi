@@ -37,6 +37,7 @@ dependencies:
   generic_bloc_provider: ^2.1.1
   firebase_core: ^1.15.0
   firebase_auth: ^3.3.16
+  twitter_login: ^4.2.3
 
 dev_dependencies:
   flutter_test:
