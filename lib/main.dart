@@ -6,7 +6,15 @@ import 'package:platzi_trips_app/platzi_trips.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+
+  // Add Firebase api
+  const auth = FirebaseOptions(
+      apiKey: "appKey",
+      appId: "cursos-de-flutter-avanzado",
+      messagingSenderId: "messengerID",
+      projectId: "cursos-de-flutter-avanzado");
+
+  await Firebase.initializeApp(options: auth);
   runApp(const MyApp());
 }
 
